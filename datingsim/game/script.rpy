@@ -81,7 +81,7 @@ label start:
     show satellite far
     with dissolve
 
-    play sound "<from 0 to 2.5>audio/alarm.wav" volume 0.05
+    play sound "<from 0 to 2.5>audio/alarm.wav" volume 0.03
 
     "Beep. Beep. Beep."
 
@@ -123,7 +123,7 @@ label start:
     show satellite closest
     with dissolve
 
-    play sound "<from 0 to 2.5>audio/alarm.wav"
+    play sound "<from 0 to 2.5>audio/alarm.wav" volume 0.7
 
     "BEEP! BEEP! BEEP!"
 
@@ -142,7 +142,7 @@ label start:
 
     t "Ugh..."
 
-    play sound "<from 0 to 1.25>audio/alarm.wav" volume 0.1
+    play sound "audio/alarm_off.wav" volume 0.1
 
     "BEEP! BEE---"
 
@@ -212,6 +212,42 @@ label start:
     t "Wow, look at that."
 
     "(I find myself standing in front of the International Space Aeronautics and Astronomy Center, or ISAAC for short. Named after the famous Isaac Newton, of course!)"
+
+    "(I frantically pull out my phone and double-check where I'm supposed to meet my new boss.)"
+
+    "(I was able to make up for some lost time by breaking a few traffic rules, but now I need to make sure I don't get lost on this huge campus!)"
+
+    t "Hm, \"Building 8, Room 52\"..."
+
+    "(Luckily, there's a map of the campus nearby, so I take a quick look and try to memorize the path to the correct building.)"
+
+    t "Alright, I think I got it down... Let's do this!"
+
+    scene bg_hallway
+    with fade
+
+    t "*Ahem* Hellooo?"
+
+    "(I'm standind in the middle of a semi-deserted hallway, looking at a door with a huge red sign posted on it.)"
+
+    "WARNING: NO ACCESS TO ROOM 52"
+
+    t "This {i}is{/i} the room, right...?"
+
+    "(I double check my email again, and it defintely says 'Building 8, Room 52.' I even walked around this building several times to make sure it was the right place.)"
+
+    "(I look down at the door handle.)"
+
+    t "I mean, it doesn't hurt to try..."
+
+    "(I place a shaky hand on the handle and slowly open the door. Surprisingly, it's unlocked, despite the warning sign.)"
+
+    scene bg_controlroom
+    with fade
+
+    pause
+
+    "hello world"
 
     # This ends the game.
 
